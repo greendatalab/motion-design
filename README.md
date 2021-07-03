@@ -1,5 +1,20 @@
 # Getting Started with Create React App
 
+
+## How to Execute in docker
+
+```sh
+docker build -t motion:dev . \
+&& docker run \
+    -it \
+    --rm \
+    -v ${PWD}:/app \
+    -v /app/node_modules \
+    -p 3001:3000 \
+    -e CHOKIDAR_USEPOLLING=true \
+    motion:dev
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
