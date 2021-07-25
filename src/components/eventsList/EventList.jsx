@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { motion, AnimateSharedLayout, AnimatePresence } from "framer-motion";
 import "./styles.css";
+import { EventsList } from "../../constants/events";
+import { Typography } from "@material-ui/core";
 
 /**
  * This is an example of animating shared layouts in Framer Motion 2.
@@ -15,36 +17,44 @@ import "./styles.css";
 
 export default function EventList() {
   return (
-    <AnimateSharedLayout>
+      <AnimateSharedLayout>
       <motion.ul layout initial={{ borderRadius: 25 }}>
-        {items.map(item => (
-          <Item key={item} />
+        {console.log(items)}
+        {EventsList.map(event => (
+          <Item key={event} event={event} />
         ))}
       </motion.ul>
     </AnimateSharedLayout>
   );
 }
 
-function Item() {
+function Item(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 10 }}>
+    <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 10 }} whileHover={{
+        scale: 1.05,
+        transition: { duration: 0.3 }
+      }}>
         <div className="itemHeader">
 
-        <motion.div className="avatar" layout />
-        <motion.div className="itemTitle" layout >
-            Item 1
-        </motion.div>
+            <motion.div layout>
+                {props.event.icon}
+            </motion.div>
+
+            <motion.div className="itemTitle" layout >
+                {props.event.title}
+            </motion.div>
+
         </div>
-        <AnimatePresence>{isOpen && <Content />}</AnimatePresence>
+        <AnimatePresence>{isOpen && <Content description={props.event.description}/>}</AnimatePresence>
     </motion.li>
   );
 }
 
-function Content() {
+function Content(props) {
   return (
     <motion.div
       layout
@@ -52,9 +62,9 @@ function Content() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div className="row" />
-      <div className="row" />
-      <div className="row" />
+        <Typography variant='body1' >
+            {props.description}
+        </Typography>
     </motion.div>
   );
 }

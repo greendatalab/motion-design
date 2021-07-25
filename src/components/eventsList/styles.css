@@ -52,8 +52,8 @@ li:last-child {
 }
 
 .avatar {
-  width: 40px;
-  height: 40px;
+  /* width: 40px;
+  height: 40px; */
   background-color: #666;
   border-radius: 20px;
 }
