@@ -1,5 +1,10 @@
 # Getting Started with Create React App
 
+Re-use UI components widgets with good animations, lot's of CSS, keyframes and slow motion.
+
+You can expect to find some Javascript code, React components, Typescript & docker.
+
+More to come.
 
 ## How to Execute in docker
 

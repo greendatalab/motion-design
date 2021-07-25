@@ -1,26 +1,16 @@
 import React from 'react'
+import EventList from './components/eventsList/EventList'
 
 import GlobalStyles from './styles/global'
-import {Main, Section, Sticky} from './styles/index'
-
-import FirstAndSecond from './components/FirstAndSecond'
+import {Main} from './styles/index'
 
 function App() {
   return (
       <>
         <GlobalStyles />
 
-        <Main style={{ height: '1610vh' }}>
-            <Section style={{ height: '72.7%' }}>
-                <FirstAndSecond />
-            </Section>
-            <Section style={{ height: '9.7%' }}>
-                <Sticky className='third' />
-            </Section>
-             <Section style={{ height: '10.1%' }}>
-                <Sticky className='third' />
-            </Section>
-        </Main>
+        <EventList />
+        
       </>
   )
 }
