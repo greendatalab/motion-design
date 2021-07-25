@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/motion-design/static/css/main.6e6fceaa.chunk.css",
-    "main.js": "/motion-design/static/js/main.86460d02.chunk.js",
-    "main.js.map": "/motion-design/static/js/main.86460d02.chunk.js.map",
+    "main.css": "/motion-design/static/css/main.064ad6d0.chunk.css",
+    "main.js": "/motion-design/static/js/main.e0e1649a.chunk.js",
+    "main.js.map": "/motion-design/static/js/main.e0e1649a.chunk.js.map",
     "runtime-main.js": "/motion-design/static/js/runtime-main.e2414b44.js",
     "runtime-main.js.map": "/motion-design/static/js/runtime-main.e2414b44.js.map",
     "static/js/2.32a956ba.chunk.js": "/motion-design/static/js/2.32a956ba.chunk.js",
     "static/js/2.32a956ba.chunk.js.map": "/motion-design/static/js/2.32a956ba.chunk.js.map",
     "index.html": "/motion-design/index.html",
-    "static/css/main.6e6fceaa.chunk.css.map": "/motion-design/static/css/main.6e6fceaa.chunk.css.map",
+    "static/css/main.064ad6d0.chunk.css.map": "/motion-design/static/css/main.064ad6d0.chunk.css.map",
     "static/js/2.32a956ba.chunk.js.LICENSE.txt": "/motion-design/static/js/2.32a956ba.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e2414b44.js",
     "static/js/2.32a956ba.chunk.js",
-    "static/css/main.6e6fceaa.chunk.css",
-    "static/js/main.86460d02.chunk.js"
+    "static/css/main.064ad6d0.chunk.css",
+    "static/js/main.e0e1649a.chunk.js"
   ]
 }
