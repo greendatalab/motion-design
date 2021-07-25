@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/motion-design/static/css/main.7c5f82e7.chunk.css",
+    "main.js": "/motion-design/static/js/main.b810d843.chunk.js",
+    "main.js.map": "/motion-design/static/js/main.b810d843.chunk.js.map",
+    "runtime-main.js": "/motion-design/static/js/runtime-main.e2414b44.js",
+    "runtime-main.js.map": "/motion-design/static/js/runtime-main.e2414b44.js.map",
+    "static/js/2.94e1f647.chunk.js": "/motion-design/static/js/2.94e1f647.chunk.js",
+    "static/js/2.94e1f647.chunk.js.map": "/motion-design/static/js/2.94e1f647.chunk.js.map",
+    "index.html": "/motion-design/index.html",
+    "static/css/main.7c5f82e7.chunk.css.map": "/motion-design/static/css/main.7c5f82e7.chunk.css.map",
+    "static/js/2.94e1f647.chunk.js.LICENSE.txt": "/motion-design/static/js/2.94e1f647.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e2414b44.js",
+    "static/js/2.94e1f647.chunk.js",
+    "static/css/main.7c5f82e7.chunk.css",
+    "static/js/main.b810d843.chunk.js"
+  ]
+}
