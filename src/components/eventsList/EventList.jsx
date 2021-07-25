@@ -38,7 +38,7 @@ function Item(props) {
       onClick={toggleOpen}
       initial={{ borderRadius: 10 }}
       whileHover={{
-        scale: 1.05,
+        scale: 1.02,
         transition: { duration: 0.3 },
       }}
     >
