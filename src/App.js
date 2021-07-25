@@ -1,18 +1,18 @@
-import React from 'react'
-import EventList from './components/eventsList/EventList'
+import React from "react";
+import EventList from "./components/eventsList/EventList";
 
-import GlobalStyles from './styles/global'
-import {Main} from './styles/index'
+import GlobalStyles from "./styles/global";
+// import { Main } from "./styles/index";
 
 function App() {
   return (
-      <>
-        <GlobalStyles />
+    <>
+      <GlobalStyles />
 
-        <EventList />
-        
-      </>
-  )
+      <EventList />
+      {/* <Data /> */}
+    </>
+  );
 }
 
 export default App;

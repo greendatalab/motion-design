@@ -17,11 +17,10 @@ import { Typography } from "@material-ui/core";
 
 export default function EventList() {
   return (
-      <AnimateSharedLayout>
+    <AnimateSharedLayout>
       <motion.ul layout initial={{ borderRadius: 25 }}>
-        {console.log(items)}
-        {EventsList.map(event => (
-          <Item key={event} event={event} />
+        {EventsList.map((event) => (
+          <Item key={event.id} event={event} />
         ))}
       </motion.ul>
     </AnimateSharedLayout>
@@ -34,22 +33,30 @@ function Item(props) {
   const toggleOpen = () => setIsOpen(!isOpen);
 
   return (
-    <motion.li layout onClick={toggleOpen} initial={{ borderRadius: 10 }} whileHover={{
+    <motion.li
+      layout
+      onClick={toggleOpen}
+      initial={{ borderRadius: 10 }}
+      whileHover={{
         scale: 1.05,
-        transition: { duration: 0.3 }
-      }}>
-        <div className="itemHeader">
+        transition: { duration: 0.3 },
+      }}
+    >
+      <motion.div className="itemHeader">
+        <motion.div layout>{props.event.icon}</motion.div>
 
-            <motion.div layout>
-                {props.event.icon}
-            </motion.div>
-
-            <motion.div className="itemTitle" layout >
-                {props.event.title}
-            </motion.div>
-
-        </div>
-        <AnimatePresence>{isOpen && <Content description={props.event.description}/>}</AnimatePresence>
+        <motion.div className="itemTitle" layout>
+          {props.event.title}
+        </motion.div>
+      </motion.div>
+      <AnimatePresence>
+        {isOpen && (
+          <Content
+            description={props.event.description}
+            chart={props.event.chart}
+          />
+        )}
+      </AnimatePresence>
     </motion.li>
   );
 }
@@ -62,11 +69,10 @@ function Content(props) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-        <Typography variant='body1' >
-            {props.description}
-        </Typography>
+      <Typography variant="body1">{props.description}</Typography>
+      {props.chart}
     </motion.div>
   );
 }
 
-const items = [0, 1, 2];
+// const items = [0, 1, 2];

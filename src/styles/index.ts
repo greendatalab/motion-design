@@ -1,44 +1,44 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Main = styled.main`
-    .first {
+  .first {
     background: red;
     overflow: hidden;
-    
-        .offset {}
-        .a {
-            background: #f5f1ea;
-        }
-        .b {
-            background: #582534;
-         }
-        .c {
-            background: #0a7397;
-        }
+
+    .offset {
     }
-    
-    .second {
-        background: green;
+    .a {
+      background: #f5f1ea;
     }
-    
-    .third {
-        background: yellow;
+    .b {
+      background: #582534;
     }
-    
-    .fourth {
-        background: blue;
+    .c {
+      background: #0a7397;
     }
-`
+  }
+
+  .second {
+    background: green;
+  }
+
+  .third {
+    background: yellow;
+  }
+
+  .fourth {
+    background: blue;
+  }
+`;
 
 export const Section = styled.main`
-    position: relative;
-    
-`
+  position: relative;
+`;
 
 export const Sticky = styled.main`
-    height: 100vh;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-`
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+`;
